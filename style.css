@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-  font-family: "Roboto";
+  font-family: "Roboto", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.125rem;
@@ -60,7 +60,7 @@ body {
 .headline > h2 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  font-family: "Roboto";
+  font-family: "Roboto", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.5rem;
@@ -70,7 +70,7 @@ body {
 }
 
 .headline > p {
-  font-family: "Poppins";
+  font-family: "Poppins", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -78,10 +78,10 @@ body {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   margin-bottom: 0.75rem;
-  color: #ffffff;
+  color: #fff;
 }
 
-socials {
+.socials {
   display: flex;
   margin-left: 1.5rem;
   margin-right: 9.438rem;
