@@ -22,6 +22,7 @@ body {
 }
 
 .logo {
+  text-decoration: none;
   font-family: "Roboto", serif;
   font-style: normal;
   font-weight: 700;
@@ -86,6 +87,7 @@ body {
   margin-left: 1.5rem;
   margin-right: 9.438rem;
   width: min-content;
+  list-style: none;
 }
 
 .socialLink {
@@ -95,12 +97,12 @@ body {
 
 .bgImage {
   position: absolute;
+  background-image: url("./images/Illustration.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 45.5%;
   right: 0%;
-}
-
-@media (max-width: 375px) {
-  .bgImage {
-    display: none;
-  }
+  z-index: 1;
+  width: 10rem;
+  bottom: 0%;
 }
