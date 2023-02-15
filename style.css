@@ -106,3 +106,9 @@ body {
   width: 10rem;
   bottom: 0%;
 }
+
+@media (min-width: 768px) {
+  .headline > p {
+    width: 30%;
+  }
+}
