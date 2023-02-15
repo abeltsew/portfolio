@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +9,9 @@
 body {
   display: flex;
   flex-direction: column;
-  /* min-width: 375px; */
   width: 100%;
 }
+
 .nav {
   background-color: #3c3a39;
   display: flex;
@@ -26,10 +27,11 @@ body {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  color: #ffffff;
+  color: #fff;
 }
+
 .mobileMenu {
-  color: #ffffff;
+  color: #fff;
 }
 
 .headline {
@@ -54,6 +56,7 @@ body {
   margin-right: 1.5rem;
   margin-bottom: 0.75rem;
 }
+
 .headline > h2 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
