@@ -180,8 +180,8 @@ body {
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.063rem;
+  line-height: 1.5rem;
   text-align: center;
   letter-spacing: 0.03em;
   max-width: fit-content;
@@ -198,7 +198,7 @@ body {
   background-image: url("./images/card-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 386px;
+  height: 24.125rem;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -209,8 +209,8 @@ body {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
   color: #fff;
   margin-top: 6.25rem;
 }
@@ -222,8 +222,8 @@ body {
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.063rem;
+  line-height: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,8 +236,8 @@ body {
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #fff;
 }
 
@@ -267,8 +267,8 @@ body {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
+  font-size: 4.5rem;
+  line-height: 5.5rem;
   letter-spacing: 0.37px;
   color: #ff6b00;
 }
@@ -277,8 +277,8 @@ body {
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #f4f5f7;
 }
 
@@ -296,12 +296,12 @@ body {
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.063;
+  line-height: 1.5rem;
   background: #ff6b00;
-  height: 48px;
-  width: 161px;
-  padding: 12px;
+  height: 3rem;
+  width: 10.063rem;
+  padding: 0.75rem;
   color: #fff;
 }
 
@@ -318,8 +318,8 @@ body {
   font-family: "InaiMathi", serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
   display: flex;
   align-items: center;
   color: #fff;
@@ -329,8 +329,8 @@ body {
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
+  font-size: 1.375rem;
+  line-height: 2.688rem;
   display: flex;
   align-items: center;
   text-align: center;
