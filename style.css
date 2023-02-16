@@ -286,6 +286,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .actionImg {
   position: relative;
   right: -5%;
@@ -321,8 +322,7 @@ body {
   line-height: 44px;
   display: flex;
   align-items: center;
-
-  color: #ffffff;
+  color: #fff;
 }
 
 .aboutItems {
@@ -334,7 +334,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .aboutHeader {
