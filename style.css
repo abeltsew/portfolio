@@ -172,11 +172,9 @@ body {
   border-color: #8993a4;
   padding: 0.625rem 0.75rem;
 }
-button {
-  border: none;
-}
 
 button {
+  border: none;
   background-color: #e05304;
   color: #fff;
 }
@@ -272,6 +270,11 @@ button:hover {
   flex-direction: column;
   gap: 2rem;
   padding: 1rem 1.5rem 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-image: url("./images/About-img.png");
+  background-size: 46% 13%;
+  background-position-x: 100%;
+  background-position-y: 21%;
 }
 
 .about > h2 {
@@ -294,13 +297,6 @@ button:hover {
   color: #f4f5f7;
 }
 
-.about {
-  background-repeat: no-repeat;
-  background-image: url("./images/About-img.png");
-  background-size: 46% 13%;
-  background-position-x: 100%;
-  background-position-y: 21%;
-}
 .action {
   margin-bottom: 12rem;
 }
