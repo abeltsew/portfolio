@@ -112,3 +112,27 @@ body {
     width: 30%;
   }
 }
+
+.work {
+  background-color: #e5e5e5;
+  padding: 6rem 1.5rem 1.5rem 1.5rem;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.recentWorks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.688rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.recentWorks > h2 {
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
