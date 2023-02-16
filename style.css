@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Crete+Round&family=Poppins&family=Roboto:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -44,7 +44,7 @@ body {
   color: #ff6b00;
 }
 
-.headline > h1 {
+.headline h1 {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
@@ -114,7 +114,6 @@ body {
 }
 
 .work {
-  background-color: #e5e5e5;
   padding: 6rem 1.5rem 1.5rem 1.5rem;
   display: grid;
   grid-template-rows: 1fr;
@@ -173,10 +172,26 @@ body {
   border-color: #8993a4;
   padding: 0.625rem 0.75rem;
 }
+button {
+  border: none;
+}
+
+button {
+  background-color: #e05304;
+  color: #fff;
+}
+
+button:active {
+  background-color: #e05304;
+}
+
+button:hover {
+  background-color: #fff5e1;
+  color: #e05304;
+}
 
 .mainSeeBtn {
   padding: 0.75rem;
-  color: #fff;
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: 700;
@@ -186,7 +201,6 @@ body {
   letter-spacing: 0.03em;
   max-width: fit-content;
   height: 3rem;
-  background: #ff6b00;
 }
 
 .cardContainer {
@@ -248,8 +262,6 @@ body {
 }
 
 .cardBtn {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.24);
   padding: 0.625rem 0.75rem;
 }
 
@@ -282,14 +294,15 @@ body {
   color: #f4f5f7;
 }
 
-.action {
-  display: flex;
-  justify-content: space-between;
+.about {
+  background-repeat: no-repeat;
+  background-image: url("./images/About-img.png");
+  background-size: 46% 13%;
+  background-position-x: 100%;
+  background-position-y: 21%;
 }
-
-.actionImg {
-  position: relative;
-  right: -5%;
+.action {
+  margin-bottom: 12rem;
 }
 
 .resume {
@@ -338,9 +351,20 @@ body {
 }
 
 .aboutHeader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
   margin-bottom: 2.5rem;
+  background-repeat: no-repeat;
+  background-position-y: 2.5rem;
+  padding: 2rem;
+}
+
+.circle {
+  background-image: url(./images/Rectangle\ 57.svg);
+}
+
+.square {
+  background-image: url(./images/Rectangle\ 56.svg);
+}
+
+.dimond {
+  background-image: url(./images/Rectangle\ 55.svg);
 }
