@@ -161,6 +161,11 @@ body {
 }
 
 .projects > p {
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #091e42;
 }
 
@@ -172,8 +177,15 @@ body {
 
 .toolsBtn {
   color: #091e42;
-  border-color: #8993a4;
   padding: 0.625rem 0.75rem;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #8993a4;
+}
+
+.toolsBtn:active {
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
 button {
@@ -188,7 +200,8 @@ button:active {
 
 button:hover {
   background-color: #fff5e1;
-  color: #e05304;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .mainSeeBtn {
@@ -263,7 +276,19 @@ button:hover {
 }
 
 .cardBtn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
   padding: 0.625rem 0.75rem;
+  background: #fff;
+  border: 1px solid #8993a4;
+  color: #091e42;
+}
+.cardBtn:active {
+  background-color: #e05304;
+  color: #f4f1f0;
 }
 
 .about {
