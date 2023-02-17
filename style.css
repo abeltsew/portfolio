@@ -19,6 +19,9 @@ body {
   align-items: center;
   height: 5vh;
   padding: 0 5%;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
 }
 
 .logo {
@@ -38,8 +41,8 @@ body {
 .headline {
   display: flex;
   flex-direction: column;
-  height: 95vh;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-color: #1c1a19;
   color: #ff6b00;
 }
@@ -347,7 +350,6 @@ button:hover {
 }
 
 .aboutHeader {
-  margin-bottom: 2.5rem;
   background-repeat: no-repeat;
   background-position-y: 2.5rem;
   padding: 2rem;
