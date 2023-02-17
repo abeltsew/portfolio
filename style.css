@@ -121,6 +121,7 @@ body {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
+  overflow: hidden;
 }
 
 .recentWorks {
@@ -147,7 +148,6 @@ body {
   justify-content: space-between;
   gap: 1rem;
   width: 100%;
-  padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
 
 .projects > h2 {
@@ -156,7 +156,7 @@ body {
   font-style: normal;
   color: #091e42;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 2.75rem;
 }
 
