@@ -171,8 +171,8 @@ body {
 
 .tools {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 
 .toolsBtn {
@@ -181,6 +181,8 @@ body {
   box-sizing: border-box;
   background: #fff;
   border: 1px solid #8993a4;
+  float: left;
+  margin-right: 1.1rem;
 }
 
 .toolsBtn:active {
