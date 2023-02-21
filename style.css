@@ -583,6 +583,11 @@ footer {
     align-items: start;
   }
 
+  .about,
+  .work {
+    padding: 1rem 4.875rem;
+  }
+
   .aboutTools {
     align-items: start;
     justify-items: center;
