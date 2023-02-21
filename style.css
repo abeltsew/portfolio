@@ -575,6 +575,21 @@ footer {
 
   .cardContainer {
     height: auto;
+    position: relative;
+  }
+
+  .cardSeeProj {
+    display: none;
+  }
+
+  .cardContainer:hover .cardSeeProj {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .cardContainer:hover .cardBtns {
+    display: none;
   }
 
   .sideTools {
