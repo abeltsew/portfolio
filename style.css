@@ -561,4 +561,21 @@ footer {
   .projects {
     flex-direction: row;
   }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+  }
+
+  .sideTools {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+
+  .aboutTools {
+    align-items: start;
+    justify-items: center;
+  }
 }
