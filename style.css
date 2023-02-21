@@ -565,8 +565,18 @@ footer {
   .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, minmax(150px, 1fr)); */
     grid-gap: 1.5rem;
   }
+
+  /* .cardBtns {
+    display: flex;
+    gap: 2%;
+  }
+
+  .card {
+    height: auto;
+  } */
 
   .sideTools {
     display: grid;
@@ -577,5 +587,19 @@ footer {
   .aboutTools {
     align-items: start;
     justify-items: center;
+  }
+
+  .about > p {
+    width: 50%;
+  }
+
+  .about {
+    background-image: url("./images/illustration-about\ me.svg");
+    background-position: top 100px right;
+    background-size: 23rem 23rem;
+  }
+
+  .action {
+    margin-bottom: 2rem;
   }
 }
