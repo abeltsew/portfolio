@@ -62,7 +62,7 @@ body {
   margin-bottom: 0.75rem;
 }
 
-.headline > h2 {
+.headelineSub {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   font-family: "Roboto", serif;
@@ -74,7 +74,7 @@ body {
   color: #fff5e1;
 }
 
-.headline > p {
+.headlineDesc {
   font-family: "Poppins", serif;
   font-style: normal;
   font-weight: 400;
@@ -109,12 +109,6 @@ body {
   z-index: 1;
   width: 10rem;
   bottom: 0%;
-}
-
-@media (min-width: 768px) {
-  .headline > p {
-    width: 30%;
-  }
 }
 
 .work {
@@ -479,4 +473,69 @@ footer {
   width: 100%;
   height: 4.5rem;
   border-top: solid 2px #dfe1e6;
+}
+
+.desktopMenu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobileMenu {
+    display: none;
+  }
+
+  .desktopMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding-right: 3rem;
+  }
+
+  .desktopLink {
+    font-family: "Inter", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  .mail {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-top: 0.25rem;
+  }
+
+  .bgImage {
+    position: absolute;
+    background-image: url("./images/Desk-Illustration-header.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 27rem;
+    right: 0;
+    top: 0%;
+    z-index: 20;
+  }
+
+  .headline {
+    flex-direction: row;
+  }
+
+  .headerText {
+    margin-left: 2rem;
+    height: 10px;
+  }
+
+  .headline > .socials {
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+    order: -1;
+  }
+
+  .headlineDesc {
+    width: 50%;
+  }
 }
