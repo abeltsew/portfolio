@@ -294,7 +294,6 @@ button:hover {
 
 .about {
   background-color: #1c1a19;
-  height: 126.813rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -391,4 +390,14 @@ button:hover {
 
 .dimond {
   background-image: url(./images/Rectangle\ 55.svg);
+}
+
+.contact {
+  padding: 7.5rem 1.5rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
 }
