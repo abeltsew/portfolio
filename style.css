@@ -145,7 +145,7 @@ body {
   width: 100%;
 }
 
-.projects > h2 {
+.projectTitle {
   font-family: "Crete Round", serif;
   white-space: nowrap;
   font-style: normal;
@@ -155,7 +155,7 @@ body {
   line-height: 2.75rem;
 }
 
-.projects > p {
+.projectDesc {
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: 400;
@@ -167,7 +167,8 @@ body {
 .tools {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  padding: 1rem 0;
+  gap: 1rem;
 }
 
 .toolsBtn {
@@ -535,7 +536,29 @@ footer {
     order: -1;
   }
 
+  .socialLink {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   .headlineDesc {
     width: 50%;
+  }
+
+  .recentWorks {
+    flex-direction: row;
+  }
+
+  .recentWorks > h2 {
+    white-space: nowrap;
+  }
+
+  .recentWorks > img {
+    margin-left: 1.5rem;
+    width: 100%;
+  }
+
+  .projects {
+    flex-direction: row;
   }
 }
