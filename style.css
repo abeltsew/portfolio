@@ -396,6 +396,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding: 7.5rem 1.5rem;
+  overflow-x: hidden;
 }
 
 .contactHeader {
