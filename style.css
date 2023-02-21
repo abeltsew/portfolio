@@ -601,4 +601,21 @@ footer {
   .action {
     margin-bottom: 2rem;
   }
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contactTitle {
+    text-align: start;
+    width: 80%;
+  }
+
+  .contactBtn {
+    align-self: flex-start;
+  }
+
+  .contactForm {
+    gap: 0;
+  }
 }
