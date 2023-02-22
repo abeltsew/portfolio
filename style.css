@@ -650,6 +650,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem;
+    margin-bottom: 8.125rem;
   }
 
   .cardBtns {
@@ -686,7 +687,7 @@ footer {
 
   .about,
   .work {
-    padding: 1rem 5%;
+    padding: 1rem 8.813rem;
   }
 
   .aboutTools {
@@ -731,6 +732,7 @@ footer {
     background-position: top 100px right;
     background-size: 23rem 23rem;
     padding: 0 142px;
+    background-size: 422px 290px;
   }
 
   .action {
