@@ -656,6 +656,7 @@ footer {
   .cardContainer {
     height: auto;
     position: relative;
+    margin-bottom: 0;
   }
 
   .cardSeeProj {
@@ -670,10 +671,6 @@ footer {
 
   .cardContainer:hover .cardBtns {
     display: none;
-  }
-
-  .cardContainer {
-    margin-bottom: 0;
   }
 
   .sideTools {
