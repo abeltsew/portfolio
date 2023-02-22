@@ -632,14 +632,13 @@ footer {
   }
 
   .projectDesc {
-    width: 448px;
-    height: 140px;
     font-family: "Inter", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: #091e42;
+    width: 72%;
   }
 
   .projectImg {
@@ -687,7 +686,7 @@ footer {
 
   .about,
   .work {
-    padding: 1rem 141px;
+    padding: 1rem 5%;
   }
 
   .aboutTools {
