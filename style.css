@@ -730,9 +730,8 @@ footer {
   .about {
     background-image: url("./images/illustration-about\ me.svg");
     background-position: top 100px right;
-    background-size: 23rem 23rem;
+    background-size: 26.375rem 18.125rem;
     padding: 0 142px;
-    background-size: 422px 290px;
   }
 
   .action {
