@@ -19,7 +19,6 @@ body {
   align-items: center;
   height: 5vh;
   padding: 0 5%;
-  position: fixed;
   width: 100%;
   z-index: 50;
 }
@@ -485,6 +484,18 @@ footer {
     display: none;
   }
 
+  .nav {
+    height: 72px;
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Inter", serif;
+    font-style: normal;
+  }
+
   .desktopMenu {
     display: flex;
     justify-content: space-around;
@@ -512,16 +523,16 @@ footer {
   .bgImage {
     position: absolute;
     background-image: url("./images/Desk-Illustration-header.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 27rem;
-    right: 0;
-    top: 0%;
-    z-index: 20;
+    top: 0;
+    right: 0%;
+    z-index: 1;
+    width: 40rem;
+    bottom: 0%;
   }
 
   .headline {
     flex-direction: row;
+    height: 50rem;
   }
 
   .headerText {
@@ -529,20 +540,45 @@ footer {
     height: 10px;
   }
 
+  .headerText > h1 {
+    font-family: "Crete Round";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+    color: #f55800;
+  }
+
+  .headelineSub {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+  }
   .headline > .socials {
     flex-direction: column;
     justify-content: center;
-    margin-right: auto;
+    margin-right: 50px;
     order: -1;
   }
 
   .socialLink {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .headlineDesc {
-    width: 50%;
+    width: 566px;
+    height: 123px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+    margin-bottom: 251px;
   }
 
   .recentWorks {
@@ -551,6 +587,22 @@ footer {
 
   .recentWorks > h2 {
     white-space: nowrap;
+    width: 315px;
+    height: 52px;
+
+    font-family: "Crete Round";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    /* identical to box height, or 130% */
+
+    display: flex;
+    align-items: center;
+
+    /* Neutrals/N900 */
+
+    color: #091e42;
   }
 
   .recentWorks > img {
@@ -562,9 +614,44 @@ footer {
     flex-direction: row;
   }
 
+  .projectInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .projectTitle {
+    width: 448px;
+    height: 48px;
+
+    font-family: "Crete Round";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+
+    color: #091e42;
+  }
+
+  .projectDesc {
+    width: 448px;
+    height: 140px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
+  }
+
+  .projects img {
+    width: 100%;
+    height: 448px;
+  }
+
   .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem;
   }
 
@@ -592,6 +679,10 @@ footer {
     display: none;
   }
 
+  .cardContainer {
+    margin-bottom: 0;
+  }
+
   .sideTools {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -600,7 +691,7 @@ footer {
 
   .about,
   .work {
-    padding: 1rem 4.875rem;
+    padding: 1rem 141px;
   }
 
   .aboutTools {
@@ -608,14 +699,50 @@ footer {
     justify-items: center;
   }
 
-  .about > p {
-    width: 50%;
+  .about > h2 {
+    width: 566px;
+    height: 78px;
+
+    font-family: "Crete Round";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+    /* or 113% */
+
+    color: #f55800;
   }
 
+  .about > p {
+    width: 50%;
+    width: 566px;
+    height: 148px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 160% */
+
+    /* Neutrals/N20 */
+
+    color: #f4f5f7;
+  }
+
+  .resume {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+  }
   .about {
     background-image: url("./images/illustration-about\ me.svg");
     background-position: top 100px right;
     background-size: 23rem 23rem;
+    padding: 0 142px;
   }
 
   .action {
@@ -625,15 +752,29 @@ footer {
   .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 7.5rem 7.5rem;
   }
 
   .contactTitle {
     text-align: start;
-    width: 80%;
+
+    width: 455px;
+    height: 256px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
   }
 
   .contactBtn {
     align-self: flex-start;
+  }
+
+  textarea {
+    height: 114px;
   }
 
   .contactForm {
