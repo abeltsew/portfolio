@@ -144,6 +144,10 @@ body {
   width: 100%;
 }
 
+.projectImg {
+  width: 100%;
+}
+
 .projectTitle {
   font-family: "Crete Round", serif;
   white-space: nowrap;
@@ -607,6 +611,7 @@ footer {
 
   .projects {
     flex-direction: row;
+    justify-content: normal;
   }
 
   .projectInfo {
@@ -637,8 +642,8 @@ footer {
     color: #091e42;
   }
 
-  .projects img {
-    width: 100%;
+  .projectImg {
+    width: 684px;
     height: 448px;
   }
 
@@ -677,6 +682,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
+    padding-bottom: 3rem;
   }
 
   .about,
