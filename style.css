@@ -438,6 +438,7 @@ input {
   font-size: 0.9rem;
   line-height: 1rem;
   padding: 0.25rem 0.5rem;
+  transition: 200ms ease-in;
 }
 
 .fieldSeparator {
