@@ -530,8 +530,10 @@ footer {
     top: 0;
     right: 0%;
     z-index: 1;
-    width: 40rem;
+    width: 40%;
     bottom: 0%;
+    background-size: 100% 107%;
+    flex: 2;
   }
 
   .headline {
@@ -542,6 +544,7 @@ footer {
   .headerText {
     margin-left: 2rem;
     height: 10px;
+    flex: 2;
   }
 
   .headerText > h1 {
@@ -551,6 +554,7 @@ footer {
     font-size: 72px;
     line-height: 82px;
     color: #f55800;
+    margin-top: 11rem;
   }
 
   .headelineSub {
@@ -565,7 +569,7 @@ footer {
   .headline > .socials {
     flex-direction: column;
     justify-content: center;
-    margin-right: 50px;
+    margin-right: 2%;
     order: -1;
   }
 
@@ -575,7 +579,7 @@ footer {
   }
 
   .headlineDesc {
-    width: 566px;
+    width: 41%;
     height: 123px;
     font-family: "Inter", serif;
     font-style: normal;
