@@ -297,10 +297,6 @@ button:hover {
   transition: 500ms ease-in;
 }
 
-input:focus {
-  translate: 1px -10px;
-}
-
 .about {
   position: relative;
   background-color: #1c1a19;
@@ -449,6 +445,10 @@ input {
   line-height: 1rem;
   padding: 0.25rem 0.5rem;
   transition: 200ms ease-in;
+}
+
+input:focus {
+  translate: 1px -10px;
 }
 
 .fieldSeparator {
