@@ -34,6 +34,7 @@ body {
 }
 
 .mobileMenu {
+  animation: heart-beat 2500ms infinite;
   color: #fff;
 }
 
@@ -759,7 +760,6 @@ footer {
     bottom: 0%;
     background-size: 100% 50%;
     flex: 2;
-
     background-image: url("./images/illustration-about\ me.svg");
   }
 
@@ -810,31 +810,34 @@ footer {
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(14deg);
   }
+
   20% {
     transform: rotate(-8deg);
   }
+
   30% {
     transform: rotate(14deg);
   }
+
   40% {
     transform: rotate(-4deg);
   }
+
   50% {
     transform: rotate(10deg);
   }
+
   60% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
-}
-
-.mobileMenu {
-  animation: heart-beat 2500ms infinite;
 }
 
 .mobileMenu:hover {
@@ -846,19 +849,24 @@ footer {
     scale: 1;
     opacity: 100%;
   }
+
   20% {
     scale: 1.1;
   }
+
   40% {
     opacity: 50%;
   }
+
   60% {
     opacity: 60%;
   }
+
   80% {
     scale: 1.3;
     opacity: 80%;
   }
+
   100% {
     scale: 1;
     opacity: 100%;
