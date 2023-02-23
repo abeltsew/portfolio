@@ -863,3 +863,11 @@ footer {
     opacity: 100%;
   }
 }
+
+.cardContainer:hover {
+  scale: 1.1;
+  transition: 500ms ease-in;
+}
+input:focus {
+  translate: 1px -10px;
+}
