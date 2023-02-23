@@ -292,20 +292,33 @@ button:hover {
 }
 
 .about {
+  position: relative;
   background-color: #1c1a19;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 1rem 1.5rem 5.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-image: url("./images/About-img.png");
-  background-size: 46% 13%;
-  background-position-x: 100%;
-  background-position-y: 21%;
 }
 
-.about > h2 {
+.aboutTop {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutImg {
+  position: absolute;
+  background-image: url("./images/illustration-about\ me.svg");
+  background-repeat: no-repeat;
+  top: 255px;
+  right: 0%;
+  z-index: 1;
+  width: 10rem;
+  bottom: 0%;
+}
+
+.aboutMe {
   margin-top: 7.5rem;
+  margin-bottom: 2rem;
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
@@ -315,13 +328,15 @@ button:hover {
   color: #ff6b00;
 }
 
-.about > p {
+.aboutDesc {
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
   color: #f4f5f7;
+  margin-bottom: 2rem;
+  width: 80%;
 }
 
 .action {
@@ -699,7 +714,7 @@ footer {
     justify-items: center;
   }
 
-  .about > h2 {
+  .aboutMe {
     width: 566px;
     height: 78px;
     font-family: "Crete Round", serif;
@@ -710,10 +725,8 @@ footer {
     color: #f55800;
   }
 
-  .about > p {
+  .aboutDesc {
     width: 50%;
-    width: 566px;
-    height: 148px;
     font-family: "Inter", serif;
     font-style: normal;
     font-weight: 400;
@@ -731,11 +744,22 @@ footer {
     color: #fff;
   }
 
-  .about {
+  .aboutTop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .aboutImg {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    z-index: 1;
+    width: 40%;
+    bottom: 0%;
+    background-size: 100% 50%;
+    flex: 2;
+
     background-image: url("./images/illustration-about\ me.svg");
-    background-position: top 100px right;
-    background-size: 26.375rem 18.125rem;
-    padding: 0 142px;
   }
 
   .action {
