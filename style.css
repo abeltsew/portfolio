@@ -282,9 +282,9 @@ button:hover {
   font-size: 0.938rem;
   line-height: 1.25rem;
   padding: 0.625rem 0.75rem;
-  background: #fff;
   border: 1px solid #8993a4;
-  color: #091e42;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.24);
 }
 
 .cardBtn:active {
@@ -640,14 +640,15 @@ footer {
   }
 
   .projects {
-    flex-direction: row;
-    justify-content: normal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
   }
 
   .projectInfo {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .projectTitle {
@@ -668,24 +669,34 @@ footer {
     font-size: 20px;
     line-height: 28px;
     color: #091e42;
-    width: 72%;
+    width: 80%;
   }
 
   .projectImg {
-    width: 684px;
-    height: 448px;
+    width: 100%;
+    height: 100%;
   }
 
   .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
+    grid-gap: 2%;
     margin-bottom: 8.125rem;
+  }
+
+  .card {
+    height: unset;
+    padding-bottom: 1rem;
   }
 
   .cardBtns {
     display: flex;
     gap: 2%;
+    flex-wrap: wrap;
+  }
+
+  .cardBtn {
+    margin-bottom: 1rem;
   }
 
   .cardContainer {
@@ -717,7 +728,7 @@ footer {
 
   .about,
   .work {
-    padding: 1rem 8.813rem;
+    padding: 1rem 8.1%;
   }
 
   .aboutTools {
