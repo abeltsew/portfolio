@@ -790,12 +790,12 @@ footer {
   .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 7.5rem 7.5rem;
+    padding: 7.5rem 8.1%;
   }
 
   .contactTitle {
     text-align: start;
-    width: 455px;
+    width: 70%;
     height: 256px;
     font-family: "Inter", serif;
     font-style: normal;
