@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Abel portfolio</title>
+    <title>Abel Tsegaye's portfolio</title>
   </head>
   <body>
     <header>
@@ -16,11 +16,13 @@
         </logo>
         <img class="mobileMenu" src="images\IconMenu.png" alt="Menu" />
         <ul class="desktopMenu">
-          <li class="desktopLink">Portfolio</li>
-          <li class="desktopLink">About</li>
-          <li class="desktopLink">Contact</li>
+          <li class="desktopLink"><a href="#">Portfolio</a></li>
+          <li class="desktopLink"><a href="#about">About</a></li>
+          <li class="desktopLink"><a href="#contact">Contact</a></li>
           <li class="desktopLink">
-            <img class="mail" src="images\Mail.svg" alt="Mail" />
+            <a href="#">
+              <img class="mail" src="images\Mail.svg" alt="Mail"
+            /></a>
           </li>
         </ul>
       </nav>
@@ -195,7 +197,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="aboutTop">
         <div class="aboutText">
           <h2 class="aboutMe">About me</h2>
@@ -256,7 +258,7 @@
         </li>
       </ul>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contactHeader">
         <h2 class="contactTitle">
           I'm always interested in hearing about new projects, so if you'd like
@@ -269,6 +271,7 @@
         action="https://formspree.io/f/mknarzzq"
         method="post"
       >
+        <label for="fullName"> Full Name</label>
         <input
           id="fullName"
           name="fullName"
@@ -282,6 +285,7 @@
           src="images\separatorForm.png"
           alt="separator"
         />
+        <label for="email">Email</label>
         <input
           id="email"
           name="email"
@@ -294,7 +298,7 @@
           src="images\separatorForm.png"
           alt="separator"
         />
-
+        <label for="message">Message</label>
         <textarea
           id="message"
           name="message"

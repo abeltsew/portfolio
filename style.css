@@ -38,6 +38,11 @@ body {
   color: #fff;
 }
 
+.desktopLink a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -736,7 +741,6 @@ footer {
   }
 
   .aboutMe {
-    width: 566px;
     height: 78px;
     font-family: "Crete Round", serif;
     font-style: normal;
@@ -890,4 +894,8 @@ footer {
     scale: 1;
     opacity: 100%;
   }
+}
+
+label {
+  visibility: hidden;
 }
