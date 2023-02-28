@@ -38,6 +38,11 @@ body {
   color: #fff;
 }
 
+.desktopLink a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -185,21 +190,22 @@ body {
 
 .toolsBtn:active {
   background-color: #e05304;
-  color: #f4f1f0;
+  color: #030303;
 }
 
 button {
   border: none;
-  background-color: #e05304;
+  background-color: #6b2500;
   color: #fff;
 }
 
 button:active {
   background-color: #e05304;
+  color: #000;
 }
 
 button:hover {
-  background-color: #fff5e1;
+  background-color: #000;
   border: 1px solid #f55800;
   color: #f55800;
 }
@@ -257,7 +263,7 @@ button:hover {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #fff;
+  color: #000;
 }
 
 .card p {
@@ -282,9 +288,9 @@ button:hover {
   font-size: 0.938rem;
   line-height: 1.25rem;
   padding: 0.625rem 0.75rem;
-  border: 1px solid #8993a4;
+  border: 1px solid #0e46a7;
   color: #fff;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgba(0, 0, 0, 0.24);
 }
 
 .cardBtn:active {
@@ -359,7 +365,7 @@ button:hover {
   height: 3rem;
   width: 10.063rem;
   padding: 0.75rem;
-  color: #fff;
+  color: #030303;
 }
 
 .aboutTools {
@@ -736,7 +742,6 @@ footer {
   }
 
   .aboutMe {
-    width: 566px;
     height: 78px;
     font-family: "Crete Round", serif;
     font-style: normal;
@@ -762,7 +767,6 @@ footer {
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
-    color: #fff;
   }
 
   .aboutTop {
@@ -890,4 +894,8 @@ footer {
     scale: 1;
     opacity: 100%;
   }
+}
+
+label {
+  visibility: hidden;
 }

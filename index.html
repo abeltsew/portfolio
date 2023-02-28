@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Abel portfolio</title>
+    <title>Abel Tsegaye's portfolio</title>
   </head>
   <body>
     <header>
@@ -16,11 +16,13 @@
         </logo>
         <img class="mobileMenu" src="images\IconMenu.png" alt="Menu" />
         <ul class="desktopMenu">
-          <li class="desktopLink">Portfolio</li>
-          <li class="desktopLink">About</li>
-          <li class="desktopLink">Contact</li>
+          <li class="desktopLink"><a href="#">Portfolio</a></li>
+          <li class="desktopLink"><a href="#about">About</a></li>
+          <li class="desktopLink"><a href="#contact">Contact</a></li>
           <li class="desktopLink">
-            <img class="mail" src="images\Mail.svg" alt="Mail" />
+            <a href="#">
+              <img class="mail" src="images\Mail.svg" alt="Mail"
+            /></a>
           </li>
         </ul>
       </nav>
@@ -40,27 +42,44 @@
       <ul class="socials">
         <li>
           <a class="linkIcon" href="https://github.com/abeltsew/">
-            <img class="socialLink" src="images\GitHub.png" alt="Github" />
+            <img
+              class="socialLink"
+              src="images\GitHub.png"
+              alt="Abel's Github profile"
+            />
           </a>
         </li>
         <li>
           <a class="linkIcon" href="https://www.linkedin.com/in/abeltsew/">
-            <img class="socialLink" src="images\LinkedIn.png" alt="LinkedIn"
+            <img
+              class="socialLink"
+              src="images\LinkedIn.png"
+              alt="Abel's LinkedIn profile"
           /></a>
         </li>
         <li>
           <a class="linkIcon" href="#">
-            <img class="socialLink" src="images\Anglelist.png" alt="Anglelist"
+            <img
+              class="socialLink"
+              src="images\Anglelist.png"
+              alt="Abel's Anglelist link"
           /></a>
         </li>
         <li>
           <a class="linkIcon" href="https://twitter.com/abeltsew">
-            <img class="socialLink" src="images\Twitter.png" alt="Twitter"
+            <img
+              class="socialLink"
+              src="images\Twitter.png"
+              alt="Abel's Twitter handle"
           /></a>
         </li>
         <li>
           <a class="linkIcon" href="#">
-            <img class="socialLink" src="images\Medium.png" alt="Medium" />
+            <img
+              class="socialLink"
+              src="images\Medium.png"
+              alt="Abel's Medium link"
+            />
           </a>
         </li>
       </ul>
@@ -72,13 +91,13 @@
     <section class="work">
       <div class="recentWorks">
         <h2>My Recent Works</h2>
-        <img src="images\spacer.svg" alt="Spacer" />
+        <img src="images\spacer.svg" alt="Work Section devider" />
       </div>
       <div class="projects">
         <img
           class="projectImg"
           src="images/projectImg.png"
-          alt="img placeholder"
+          alt="Main project container"
         />
         <div class="projectInfo">
           <h2 class="projectTitle">Multi-Post Stories</h2>
@@ -195,7 +214,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="aboutTop">
         <div class="aboutText">
           <h2 class="aboutMe">About me</h2>
@@ -211,7 +230,7 @@
         </div>
         <div class="aboutImg"></div>
       </div>
-      <img src="images\spacer-white.svg" alt="Spacer" />
+      <img src="images\spacer-white.svg" alt="About section devider" />
 
       <ul class="aboutTools sideTools">
         <li>
@@ -256,7 +275,7 @@
         </li>
       </ul>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contactHeader">
         <h2 class="contactTitle">
           I'm always interested in hearing about new projects, so if you'd like
@@ -269,6 +288,7 @@
         action="https://formspree.io/f/mknarzzq"
         method="post"
       >
+        <label for="fullName"> Full Name</label>
         <input
           id="fullName"
           name="fullName"
@@ -280,8 +300,9 @@
         <img
           class="fieldSeparator"
           src="images\separatorForm.png"
-          alt="separator"
+          alt="Full Name Field"
         />
+        <label for="email">Email</label>
         <input
           id="email"
           name="email"
@@ -292,9 +313,9 @@
         <img
           class="fieldSeparator"
           src="images\separatorForm.png"
-          alt="separator"
+          alt="Email field"
         />
-
+        <label for="message">Message</label>
         <textarea
           id="message"
           name="message"
@@ -311,7 +332,11 @@ Hello Abel. I would like to get in touch with you...</textarea
       <ul class="socials">
         <li>
           <a class="linkIcon" href="https://github.com/abeltsew/">
-            <img class="socialLink" src="images\GitHubDark.svg" alt="Github" />
+            <img
+              class="socialLink"
+              src="images\GitHubDark.svg"
+              alt="Abel's Github profile"
+            />
           </a>
         </li>
         <li>
@@ -319,22 +344,32 @@ Hello Abel. I would like to get in touch with you...</textarea
             <img
               class="socialLink"
               src="images\LinkedinDark.svg"
-              alt="LinkedIn"
+              alt="Abel's LinkedIn profile"
           /></a>
         </li>
         <li>
           <a class="linkIcon" href="#">
-            <img class="socialLink" src="images\Angledark.svg" alt="Anglelist"
+            <img
+              class="socialLink"
+              src="images\Angledark.svg"
+              alt="Abel's Anglelist link"
           /></a>
         </li>
         <li>
           <a class="linkIcon" href="https://twitter.com/abeltsew">
-            <img class="socialLink" src="images\TwitterDark.svg" alt="Twitter"
+            <img
+              class="socialLink"
+              src="images\TwitterDark.svg"
+              alt="Abel's Twitter handle"
           /></a>
         </li>
         <li>
           <a class="linkIcon" href="#">
-            <img class="socialLink" src="images\MidiumDark.svg" alt="Medium" />
+            <img
+              class="socialLink"
+              src="images\MidiumDark.svg"
+              alt="Abel's Medium link"
+            />
           </a>
         </li>
       </ul>
