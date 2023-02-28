@@ -190,21 +190,22 @@ body {
 
 .toolsBtn:active {
   background-color: #e05304;
-  color: #f4f1f0;
+  color: #030303;
 }
 
 button {
   border: none;
-  background-color: #e05304;
-  color: #fff;
+  background-color: #fb7528;
+  color: #000;
 }
 
 button:active {
   background-color: #e05304;
+  color: #000;
 }
 
 button:hover {
-  background-color: #fff5e1;
+  background-color: #000;
   border: 1px solid #f55800;
   color: #f55800;
 }
@@ -236,6 +237,7 @@ button:hover {
   flex-direction: column;
   gap: 0.75rem;
   padding: 0 1rem;
+  background-color: #545454;
 }
 
 .card h2 {
@@ -262,7 +264,7 @@ button:hover {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #fff;
+  color: #000;
 }
 
 .card p {
@@ -364,7 +366,7 @@ button:hover {
   height: 3rem;
   width: 10.063rem;
   padding: 0.75rem;
-  color: #fff;
+  color: #030303;
 }
 
 .aboutTools {
@@ -766,7 +768,6 @@ footer {
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
-    color: #fff;
   }
 
   .aboutTop {
