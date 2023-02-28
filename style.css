@@ -195,8 +195,8 @@ body {
 
 button {
   border: none;
-  background-color: #fb7528;
-  color: #000;
+  background-color: #6b2500;
+  color: #fff;
 }
 
 button:active {
@@ -291,7 +291,7 @@ button:hover {
   padding: 0.625rem 0.75rem;
   border: 1px solid #8993a4;
   color: #fff;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgba(0, 0, 0, 0.24);
 }
 
 .cardBtn:active {
