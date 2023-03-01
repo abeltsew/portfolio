@@ -93,7 +93,7 @@
 
 > This project is made using Mostly HTML and CSS
 
-[Video Presentation](https://loom.com/share/0fed391293194cfd8b9122b08d3c3828)
+- [Video Presentation](https://loom.com/share/0fed391293194cfd8b9122b08d3c3828)
 
 To get a local copy up and running, follow these steps.
 
