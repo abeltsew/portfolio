@@ -877,7 +877,11 @@ footer {
     justify-content: space-between;
     padding-bottom: 1rem;
     padding-top: 3rem;
-    height: 435px;
+    height: unset;
+  }
+
+  .card h2 {
+    height: 10rem;
   }
 
   .cardBtns {
