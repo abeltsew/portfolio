@@ -297,6 +297,110 @@ button:hover {
   height: 3rem;
 }
 
+.showModal {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  width: 100%;
+  z-index: 99999;
+  padding: 2rem 1rem;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  height: 95vh;
+  z-index: 99999;
+  overflow: scroll;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-heading {
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal-close {
+  color: #6f6c6b;
+  background-color: unset;
+}
+
+.modalCardBtns {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.modalCardBtn {
+  background-color: #fff;
+  font-family: "Poppins", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+  border: solid #3c3a39 1px;
+  padding: 1rem;
+}
+
+.modal-img-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.modal-desc {
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.modal-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.modal-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background: #ff6b00;
+  padding: 1rem;
+}
+
+.modal-desc-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .cardContainer {
   margin-top: 2.5rem;
   margin-bottom: 4rem;
@@ -782,6 +886,49 @@ footer {
     margin-bottom: 1rem;
   }
 
+  .modal {
+    padding: 5% 6%;
+  }
+
+  .modal-content {
+    height: 100%;
+  }
+
+  .modalCardBtns {
+    margin-top: 0;
+  }
+
+  .modal-img-desc {
+    height: 100%;
+  }
+
+  .modal-desc-btns {
+    height: 100%;
+  }
+
+  .modal-desc-btns {
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .modal-desc {
+    line-height: 30px;
+  }
+
+  .modal-img-desc {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .modal-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .modal-close {
+    margin-right: 2rem;
+  }
   .cardContainer {
     height: auto;
     position: relative;
