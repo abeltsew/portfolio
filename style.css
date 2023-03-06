@@ -12,6 +12,10 @@ body {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav {
   background-color: #3c3a39;
   display: flex;
@@ -20,6 +24,7 @@ body {
   height: 5vh;
   padding: 0 5%;
   width: 100%;
+  position: fixed;
   z-index: 50;
 }
 
@@ -36,6 +41,75 @@ body {
 .mobileMenu {
   animation: heart-beat 2500ms infinite;
   color: #fff;
+}
+
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  background: #3c3a39;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 57px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  z-index: 999;
+  animation: slide-in 1s both;
+}
+
+.showMenu {
+  display: none;
+}
+
+.close {
+  color: #6f6c6b;
+  align-self: end;
+  margin: 3.875rem 2.375rem -0.875rem;
+  background-color: unset;
+  width: 1rem;
+  height: 1rem;
+  z-index: 989;
+}
+
+.close:hover {
+  background-color: unset;
+  color: #6f6c6b;
+  border: none;
+  transform: rotate(180deg);
+  scale: 1.5;
+}
+
+.mobileLinkText {
+  text-decoration: none;
+  color: #fff5e1;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.mobileLinkText:hover {
+  color: #ff6b00;
+  font-size: 40px;
+  transition: 300ms ease-in-out;
+}
+
+.mobileLink {
+  list-style: none;
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid #6f6c6b;
+  margin: 1rem;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 .desktopLink a {
@@ -532,6 +606,10 @@ footer {
     font-style: normal;
   }
 
+  .menu-mobile {
+    display: none;
+  }
+
   .desktopMenu {
     display: flex;
     justify-content: space-around;
@@ -721,7 +799,7 @@ footer {
   }
 
   .cardContainer:hover .cardBtns {
-    display: none;
+    visibility: hidden;
   }
 
   .sideTools {
