@@ -340,6 +340,7 @@ button:hover {
 .modal-close {
   color: #6f6c6b;
   background-color: unset;
+  cursor: pointer;
 }
 
 .modalCardBtns {
@@ -872,8 +873,11 @@ footer {
   }
 
   .card {
-    height: unset;
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 1rem;
+    padding-top: 3rem;
+    height: 435px;
   }
 
   .cardBtns {
@@ -929,6 +933,7 @@ footer {
   .modal-close {
     margin-right: 2rem;
   }
+
   .cardContainer {
     height: auto;
     position: relative;
