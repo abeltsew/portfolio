@@ -152,7 +152,6 @@ const popUpDetail = (project) => {
 
   modalLink.addEventListener('click', () => {
     window.location.href = project.liveLink;
-    return;
   });
 
   const liveImg = document.createElement('img');
@@ -168,7 +167,6 @@ const popUpDetail = (project) => {
 
   modalLinkSource.addEventListener('click', () => {
     window.location.href = project.sourceCode;
-    return;
   });
 
   const sourceImg = document.createElement('img');
