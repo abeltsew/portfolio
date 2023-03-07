@@ -85,6 +85,116 @@ const projects = [
   },
 ];
 
+const popUpDetail = (project) => {
+  // const project = projects[parseInt(projectId) - 1];
+  const modal = document.querySelector('.modal');
+  modal.classList.toggle('showModal');
+
+  const modalContent = document.createElement('div');
+  modalContent.classList.add('modal-content');
+
+  const modalTitle = document.createElement('div');
+  modalTitle.classList.add('modal-title');
+
+  const modalHeading = document.createElement('h2');
+  modalHeading.classList.add('modal-heading');
+  modalHeading.innerHTML = project.title;
+  const modalClose = document.createElement('h2');
+  modalClose.classList.add('modal-close');
+  modalClose.innerHTML = 'x';
+
+  const modalBtns = document.createElement('div');
+  modalBtns.classList.add('modal-btns');
+
+  const modalCardBtns = document.createElement('ul');
+  modalCardBtns.classList.add('modalCardBtns');
+  project.tech.forEach((techno) => {
+    const li = document.createElement('li');
+    const modalCardBtn = document.createElement('button');
+    modalCardBtn.classList.add('modalCardBtn');
+    modalCardBtn.innerHTML = techno;
+    li.appendChild(modalCardBtn);
+    modalCardBtns.appendChild(li);
+  });
+
+  modalBtns.appendChild(modalCardBtns);
+  modalTitle.appendChild(modalHeading);
+  modalTitle.appendChild(modalClose);
+
+  modalContent.appendChild(modalTitle);
+  modalContent.appendChild(modalBtns);
+
+  const modalImgDesc = document.createElement('div');
+  modalImgDesc.classList.add('modal-img-desc');
+
+  const modalImg = document.createElement('img');
+  modalImg.classList.add('modal-img');
+  modalImg.src = project.image;
+  modalImg.alt = 'Project wallpaper';
+
+  modalImgDesc.appendChild(modalImg);
+
+  const modalDescBtns = document.createElement('div');
+  modalDescBtns.classList.add('modal-desc-btns');
+
+  const modalDesc = document.createElement('p');
+  modalDesc.classList.add('modal-desc');
+  modalDesc.innerHTML = project.description;
+
+  modalDescBtns.appendChild(modalDesc);
+
+  const modalLinks = document.createElement('div');
+  modalLinks.classList.add('modal-links');
+
+  const modalLink = document.createElement('button');
+  modalLink.classList.add('modal-link');
+  modalLink.innerHTML = 'See Live';
+
+  modalLink.addEventListener(
+    'click',
+    () => (window.location.href = project.liveLink)
+  );
+
+  const liveImg = document.createElement('img');
+  liveImg.src = '/images/live-link.png';
+
+  modalLink.appendChild(liveImg);
+
+  modalLinks.appendChild(modalLink);
+
+  const modalLinkSource = document.createElement('button');
+  modalLinkSource.classList.add('modal-link');
+  modalLinkSource.innerHTML = 'See Source';
+
+  modalLinkSource.addEventListener(
+    'click',
+    () => (window.location.href = project.sourceCode)
+  );
+
+  const sourceImg = document.createElement('img');
+  sourceImg.src = '\\images\\source-link.png';
+
+  modalLinkSource.appendChild(sourceImg);
+
+  modalLinks.appendChild(modalLink);
+
+  modalLinks.appendChild(modalLinkSource);
+
+  modalDescBtns.appendChild(modalLinks);
+
+  modalImgDesc.appendChild(modalDescBtns);
+
+  modalContent.appendChild(modalImgDesc);
+
+  modal.appendChild(modalContent);
+
+  // close the Modal
+  const modalCloseBtn = document.querySelector('.modal-close');
+  modalCloseBtn.addEventListener('click', () => {
+    modal.classList.add('showModal');
+    modal.removeChild(modalContent);
+  });
+};
 // Build Main project card
 
 const mainProject = {
@@ -125,7 +235,7 @@ projectInfo.appendChild(projectDesc);
 const tools = document.createElement('ul');
 tools.classList.add('tools');
 
-mainProject.tech.map((techno) => {
+mainProject.tech.forEach((techno) => {
   const li = document.createElement('li');
   const btn = document.createElement('button');
   btn.classList.add('toolsBtn');
@@ -168,7 +278,7 @@ projects.forEach((project) => {
   const cardBtns = document.createElement('ul');
   cardBtns.classList.add('cardBtns');
 
-  project.tech.map((btn) => {
+  project.tech.forEach((btn) => {
     const li = document.createElement('li');
     const cardBtn = document.createElement('button');
     cardBtn.classList.add('cardBtn');
@@ -192,111 +302,3 @@ projects.forEach((project) => {
 
   cards.appendChild(cardContainer);
 });
-
-const popUpDetail = (project) => {
-  // const project = projects[parseInt(projectId) - 1];
-  const modal = document.querySelector('.modal');
-  modal.classList.toggle('showModal');
-
-  const modalContent = document.createElement('div');
-  modalContent.classList.add('modal-content');
-
-  const modalTitle = document.createElement('div');
-  modalTitle.classList.add('modal-title');
-
-  const modalHeading = document.createElement('h2');
-  modalHeading.classList.add('modal-heading');
-  modalHeading.innerHTML = project.title;
-  const modalClose = document.createElement('h2');
-  modalClose.classList.add('modal-close');
-  modalClose.innerHTML = 'x';
-
-  const modalBtns = document.createElement('div');
-  modalBtns.classList.add('modal-btns');
-
-  const modalCardBtns = document.createElement('ul');
-  modalCardBtns.classList.add('modalCardBtns');
-  project.tech.map((techno) => {
-    const li = document.createElement('li');
-    const modalCardBtn = document.createElement('button');
-    modalCardBtn.classList.add('modalCardBtn');
-    modalCardBtn.innerHTML = techno;
-    li.appendChild(modalCardBtn);
-    modalCardBtns.appendChild(li);
-  });
-
-  modalBtns.appendChild(modalCardBtns);
-  modalTitle.appendChild(modalHeading);
-  modalTitle.appendChild(modalClose);
-
-  modalContent.appendChild(modalTitle);
-  modalContent.appendChild(modalBtns);
-
-  const modalImgDesc = document.createElement('div');
-  modalImgDesc.classList.add('modal-img-desc');
-
-  const modalImg = document.createElement('img');
-  modalImg.classList.add('modal-img');
-  modalImg.src = project.image;
-  modalImg.alt = 'Project wallpaper';
-
-  modalImgDesc.appendChild(modalImg);
-
-  const modalDescBtns = document.createElement('div');
-  modalDescBtns.classList.add('modal-desc-btns');
-
-  const modalDesc = document.createElement('p');
-  modalDesc.classList.add('modal-desc');
-  modalDesc.innerHTML = project.description;
-
-  modalDescBtns.appendChild(modalDesc);
-
-  const modalLinks = document.createElement('div');
-  modalLinks.classList.add('modal-links');
-
-  const modalLink = document.createElement('button');
-  modalLink.classList.add('modal-link');
-  modalLink.innerHTML = 'See Live';
-
-  modalLink.addEventListener('click', () => (location.href = project.liveLink));
-
-  const liveImg = document.createElement('img');
-  liveImg.src = '\\images\\live-link.png';
-
-  modalLink.appendChild(liveImg);
-
-  modalLinks.appendChild(modalLink);
-
-  const modalLinkSource = document.createElement('button');
-  modalLinkSource.classList.add('modal-link');
-  modalLinkSource.innerHTML = 'See Source';
-
-  modalLinkSource.addEventListener(
-    'click',
-    () => (location.href = project.sourceCode)
-  );
-
-  const sourceImg = document.createElement('img');
-  sourceImg.src = '\\images\\source-link.png';
-
-  modalLinkSource.appendChild(sourceImg);
-
-  modalLinks.appendChild(modalLink);
-
-  modalLinks.appendChild(modalLinkSource);
-
-  modalDescBtns.appendChild(modalLinks);
-
-  modalImgDesc.appendChild(modalDescBtns);
-
-  modalContent.appendChild(modalImgDesc);
-
-  modal.appendChild(modalContent);
-
-  // close the Modal
-  const modalCloseBtn = document.querySelector('.modal-close');
-  modalCloseBtn.addEventListener('click', () => {
-    modal.classList.add('showModal');
-    modal.removeChild(modalContent);
-  });
-};
