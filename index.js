@@ -150,10 +150,10 @@ const popUpDetail = (project) => {
   modalLink.classList.add('modal-link');
   modalLink.innerHTML = 'See Live';
 
-  modalLink.addEventListener(
-    'click',
-    () => (window.location.href = project.liveLink)
-  );
+  modalLink.addEventListener('click', () => {
+    window.location.href = project.liveLink;
+    return;
+  });
 
   const liveImg = document.createElement('img');
   liveImg.src = '/images/live-link.png';
@@ -166,13 +166,13 @@ const popUpDetail = (project) => {
   modalLinkSource.classList.add('modal-link');
   modalLinkSource.innerHTML = 'See Source';
 
-  modalLinkSource.addEventListener(
-    'click',
-    () => (window.location.href = project.sourceCode)
-  );
+  modalLinkSource.addEventListener('click', () => {
+    window.location.href = project.sourceCode;
+    return;
+  });
 
   const sourceImg = document.createElement('img');
-  sourceImg.src = '\\images\\source-link.png';
+  sourceImg.src = '/images/source-link.png';
 
   modalLinkSource.appendChild(sourceImg);
 
@@ -258,13 +258,13 @@ mainProjectInfo.appendChild(projectInfo);
 // build card
 
 projects.forEach((project) => {
-  const cards = document.querySelector('.cards'); //All cards container
-  const cardContainer = document.createElement('div'); // single card container
+  const cards = document.querySelector('.cards');
+  const cardContainer = document.createElement('div');
   cardContainer.classList.add('cardContainer');
 
   const card = document.createElement('div');
   card.classList.add('card');
-  card.style.backgroundImage = `url(./images/card-bg.png)`;
+  card.style.backgroundImage = 'url(./images/card-bg.png)';
   card.style.backgroundPosition = 'center';
 
   const cardTitle = document.createElement('h2');
