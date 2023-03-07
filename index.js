@@ -17,7 +17,7 @@ const projects = [
     tech: ['html', 'Bootstrap', 'Ruby on rails'],
     image: 'images/Detail_img.png',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      "Loremd dummy text ever since the 1500s, with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     shortDesc:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     liveLink: 'https://abeltsew.github.io/portfolio/',
@@ -29,7 +29,7 @@ const projects = [
     tech: ['html', 'Bootstrap', 'Ruby on rails'],
     image: 'images/Detail_img.png',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      "Loremd dummy text ever since the 1500s, with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     shortDesc:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     liveLink: 'https://abeltsew.github.io/portfolio/',
@@ -41,7 +41,7 @@ const projects = [
     tech: ['html', 'Bootstrap', 'Ruby on rails'],
     image: 'images/Detail_img.png',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      "Loremd dummy text ever since the 1500s, with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     shortDesc:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     liveLink: 'https://abeltsew.github.io/portfolio/',
@@ -53,7 +53,7 @@ const projects = [
     tech: ['html', 'Bootstrap', 'Ruby on rails'],
     image: 'images/Detail_img.png',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      "Loremd dummy text ever since the 1500s, with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     shortDesc:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     liveLink: 'https://abeltsew.github.io/portfolio/',
@@ -65,7 +65,7 @@ const projects = [
     tech: ['html', 'Bootstrap', 'Ruby on rails'],
     image: 'images/Detail_img.png',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      "Loremd dummy text ever since the 1500s, with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     shortDesc:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     liveLink: 'https://abeltsew.github.io/portfolio/',
@@ -77,7 +77,7 @@ const projects = [
     tech: ['html', 'Bootstrap', 'Ruby on rails'],
     image: 'images/Detail_img.png',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      "Loremd dummy text ever since the 1500s, with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     shortDesc:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     liveLink: 'https://abeltsew.github.io/portfolio/',
@@ -86,9 +86,11 @@ const projects = [
 ];
 
 const popUpDetail = (project) => {
-  // const project = projects[parseInt(projectId) - 1];
   const modal = document.querySelector('.modal');
   modal.classList.toggle('showModal');
+
+  const dark = document.querySelector('.work');
+  dark.style.backgroundColor = '#000';
 
   const modalContent = document.createElement('div');
   modalContent.classList.add('modal-content');
@@ -191,6 +193,8 @@ const popUpDetail = (project) => {
   modalCloseBtn.addEventListener('click', () => {
     modal.classList.add('showModal');
     modal.removeChild(modalContent);
+    const dark = document.querySelector('.work');
+    dark.style.backgroundColor = '#fff';
   });
 };
 // Build Main project card
