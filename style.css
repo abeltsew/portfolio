@@ -293,7 +293,7 @@ button:hover {
   line-height: 1.5rem;
   text-align: center;
   letter-spacing: 0.03em;
-  max-width: "fit-content";
+  width: 8.75rem;
   height: 3rem;
 }
 
@@ -906,10 +906,6 @@ footer {
     margin-top: 0;
   }
 
-  .modal-img-desc {
-    height: 100%;
-  }
-
   .modal-desc-btns {
     justify-content: space-between;
     width: 50%;
@@ -924,6 +920,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
+    height: 100%;
   }
 
   .modal-links {
