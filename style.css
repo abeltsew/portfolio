@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Crete+Round&family=Poppins&family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Crete+Round&family=Poppins&family=Roboto:wght@300&display=swap');
 
 * {
   margin: 0;
@@ -30,7 +30,7 @@ html {
 
 .logo {
   text-decoration: none;
-  font-family: "Roboto", serif;
+  font-family: 'Roboto', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.125rem;
@@ -83,7 +83,7 @@ html {
 .mobileLinkText {
   text-decoration: none;
   color: #fff5e1;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -128,7 +128,7 @@ html {
 }
 
 .headline h1 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 3.5rem;
@@ -144,7 +144,7 @@ html {
 .headelineSub {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  font-family: "Roboto", serif;
+  font-family: 'Roboto', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.5rem;
@@ -154,7 +154,7 @@ html {
 }
 
 .headlineDesc {
-  font-family: "Poppins", serif;
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -180,7 +180,7 @@ html {
 
 .bgImage {
   position: absolute;
-  background-image: url("./images/Illustration.png");
+  background-image: url('./images/Illustration.png');
   background-repeat: no-repeat;
   background-size: cover;
   top: 45.5%;
@@ -209,7 +209,7 @@ html {
 }
 
 .recentWorks > h2 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;
@@ -229,7 +229,7 @@ html {
 }
 
 .projectTitle {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   white-space: nowrap;
   font-style: normal;
   color: #091e42;
@@ -239,7 +239,7 @@ html {
 }
 
 .projectDesc {
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -286,15 +286,123 @@ button:hover {
 
 .mainSeeBtn {
   padding: 0.75rem;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.063rem;
   line-height: 1.5rem;
   text-align: center;
   letter-spacing: 0.03em;
-  max-width: fit-content;
+  width: 8.75rem;
   height: 3rem;
+}
+
+.showModal {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  width: 100%;
+  z-index: 99999;
+  padding: 2rem 1rem;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  height: 95vh;
+  z-index: 99999;
+  overflow: scroll;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-heading {
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal-close {
+  color: #6f6c6b;
+  background-color: unset;
+  cursor: pointer;
+  padding-right: 0.5rem;
+  font-size: 2rem;
+}
+
+.modalCardBtns {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.modalCardBtn {
+  background-color: #fff;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+  border: solid #3c3a39 1px;
+  padding: 0.5rem;
+}
+
+.modal-img-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.modal-desc {
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.modal-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background: #ff6b00;
+  padding: 1rem;
+}
+
+.modal-desc-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .cardContainer {
@@ -303,7 +411,6 @@ button:hover {
 }
 
 .card {
-  background-image: url("./images/card-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 24.125rem;
@@ -314,7 +421,7 @@ button:hover {
 }
 
 .card h2 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
@@ -327,7 +434,7 @@ button:hover {
   width: 100%;
   height: 3rem;
   background-color: #ff6b00;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.063rem;
@@ -341,7 +448,7 @@ button:hover {
 }
 
 .card p {
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -356,7 +463,7 @@ button:hover {
 }
 
 .cardBtn {
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 0.938rem;
@@ -393,7 +500,7 @@ button:hover {
 
 .aboutImg {
   position: absolute;
-  background-image: url("./images/illustration-about\ me.svg");
+  background-image: url('./images/illustration-about\ me.svg');
   background-repeat: no-repeat;
   top: 255px;
   right: 0%;
@@ -405,7 +512,7 @@ button:hover {
 .aboutMe {
   margin-top: 7.5rem;
   margin-bottom: 2rem;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 4.5rem;
@@ -415,7 +522,7 @@ button:hover {
 }
 
 .aboutDesc {
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -430,10 +537,10 @@ button:hover {
 }
 
 .resume {
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.063;
+  font-size: 1.063rem;
   line-height: 1.5rem;
   background: #ff6b00;
   height: 3rem;
@@ -452,7 +559,7 @@ button:hover {
 }
 
 .aboutTitle {
-  font-family: "InaiMathi", serif;
+  font-family: 'InaiMathi', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
@@ -463,7 +570,7 @@ button:hover {
 }
 
 .aboutItems {
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.375rem;
@@ -506,7 +613,7 @@ button:hover {
 }
 
 .contactTitle {
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
@@ -518,7 +625,7 @@ button:hover {
 
 input {
   border: none;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.9rem;
@@ -544,7 +651,7 @@ input:focus {
 
 textarea {
   height: 5.625rem;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.938rem;
@@ -559,7 +666,7 @@ textarea {
   align-self: center;
   width: 8.188rem;
   height: 3rem;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.063rem;
@@ -602,7 +709,7 @@ footer {
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     font-style: normal;
   }
 
@@ -620,7 +727,7 @@ footer {
   }
 
   .desktopLink {
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -635,7 +742,7 @@ footer {
 
   .bgImage {
     position: absolute;
-    background-image: url("./images/Desk-Illustration-header.svg");
+    background-image: url('./images/Desk-Illustration-header.svg');
     top: 0;
     right: 0%;
     z-index: 1;
@@ -657,7 +764,7 @@ footer {
   }
 
   .headerText > h1 {
-    font-family: "Crete Round", serif;
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
@@ -667,7 +774,7 @@ footer {
   }
 
   .headelineSub {
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
@@ -690,7 +797,7 @@ footer {
   .headlineDesc {
     width: 41%;
     height: 123px;
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -707,7 +814,7 @@ footer {
     white-space: nowrap;
     width: 315px;
     height: 52px;
-    font-family: "Crete Round", serif;
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -737,7 +844,7 @@ footer {
   .projectTitle {
     width: 448px;
     height: 48px;
-    font-family: "Crete Round", serif;
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -746,7 +853,7 @@ footer {
   }
 
   .projectDesc {
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -768,8 +875,15 @@ footer {
   }
 
   .card {
-    height: unset;
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 1rem;
+    padding-top: 3rem;
+    height: unset;
+  }
+
+  .card h2 {
+    height: 10rem;
   }
 
   .cardBtns {
@@ -780,6 +894,44 @@ footer {
 
   .cardBtn {
     margin-bottom: 1rem;
+  }
+
+  .modal {
+    padding: 5% 6%;
+  }
+
+  .modal-content {
+    height: 100%;
+  }
+
+  .modalCardBtns {
+    margin-top: 0;
+  }
+
+  .modal-desc-btns {
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+  }
+
+  .modal-desc {
+    line-height: 30px;
+  }
+
+  .modal-img-desc {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    height: 100%;
+  }
+
+  .modal-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .modal-close {
+    margin-right: 2rem;
   }
 
   .cardContainer {
@@ -821,7 +973,7 @@ footer {
 
   .aboutMe {
     height: 78px;
-    font-family: "Crete Round", serif;
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
@@ -831,7 +983,7 @@ footer {
 
   .aboutDesc {
     width: 50%;
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -840,7 +992,7 @@ footer {
   }
 
   .resume {
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -861,7 +1013,7 @@ footer {
     bottom: 0%;
     background-size: 100% 50%;
     flex: 2;
-    background-image: url("./images/illustration-about\ me.svg");
+    background-image: url('./images/illustration-about\ me.svg');
   }
 
   .action {
@@ -878,7 +1030,7 @@ footer {
     text-align: start;
     width: 70%;
     height: 256px;
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
