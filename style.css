@@ -293,7 +293,7 @@ button:hover {
   line-height: 1.5rem;
   text-align: center;
   letter-spacing: 0.03em;
-  max-width: fit-content;
+  max-width: "fit-content";
   height: 3rem;
 }
 
@@ -312,6 +312,7 @@ button:hover {
   z-index: 99999;
   padding: 2rem 1rem;
 }
+
 .modal-content {
   display: flex;
   flex-direction: column;
@@ -537,7 +538,7 @@ button:hover {
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.063;
+  font-size: 1.063rem;
   line-height: 1.5rem;
   background: #ff6b00;
   height: 3rem;
@@ -910,12 +911,9 @@ footer {
   }
 
   .modal-desc-btns {
-    height: 100%;
-  }
-
-  .modal-desc-btns {
     justify-content: space-between;
     width: 50%;
+    height: 100%;
   }
 
   .modal-desc {
