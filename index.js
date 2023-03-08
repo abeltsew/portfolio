@@ -331,5 +331,9 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   showError(false);
   const isLowerCase = email.value === email.value.toLowerCase();
-  return isLowerCase ? form.submit() : showError(true);
+  if (isLowerCase) {
+    form.submit();
+  } else {
+    showError(true);
+  }
 });
