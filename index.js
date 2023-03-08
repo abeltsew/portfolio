@@ -157,7 +157,7 @@ const popUpDetail = (project) => {
   });
 
   const liveImg = document.createElement('img');
-  liveImg.src = '/images/live-link.png';
+  liveImg.src = 'images/live-link.png';
 
   modalLink.appendChild(liveImg);
 
@@ -172,7 +172,7 @@ const popUpDetail = (project) => {
   });
 
   const sourceImg = document.createElement('img');
-  sourceImg.src = '/images/source-link.png';
+  sourceImg.src = 'images/source-link.png';
 
   modalLinkSource.appendChild(sourceImg);
 
@@ -303,4 +303,37 @@ projects.forEach((project) => {
   cardContainer.appendChild(seeBtn);
 
   cards.appendChild(cardContainer);
+});
+
+// Form Validation
+
+const form = document.querySelector('form');
+const { email } = form.elements;
+const error = document.querySelector('.error');
+error.style.display = 'none';
+
+const showError = (isError) => {
+  error.style.textAlign = 'center';
+
+  const emailField = document.getElementById('email');
+  if (isError) {
+    error.innerHTML = 'Email should be in Lower case';
+    error.style.display = 'inline';
+    emailField.style.borderBottom = 'solid red 1px';
+  } else {
+    error.innerHTML = '';
+    error.style.display = 'none';
+    emailField.style.border = 'none';
+  }
+};
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  showError(false);
+  const isLowerCase = email.value === email.value.toLowerCase();
+  if (isLowerCase) {
+    form.submit();
+  } else {
+    showError(true);
+  }
 });

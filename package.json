@@ -1,0 +1,18 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Abel's Portfolio",
+  "main": "index.js",
+  "repository": "https://github.com/abeltsew/portfolio.git",
+  "author": "abeltsew <35835135+abeltsew@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "7.x"
+  },
+  "devDependencies": {
+    "babel-eslint": "10.x",
+    "eslint-config-airbnb-base": "14.x",
+    "eslint-plugin-import": "2.x",
+    "hint": "7.x"
+  }
+}
