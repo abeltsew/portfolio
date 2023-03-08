@@ -320,7 +320,7 @@ const showError = (isError) => {
     error.innerHTML = 'Email should be in Lower case';
     error.style.display = 'inline';
     emailField.style.borderBottom = 'solid red 1px';
-  } else if (!isError) {
+  } else {
     error.innerHTML = '';
     error.style.display = 'none';
     emailField.style.border = 'none';
@@ -331,5 +331,5 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   showError(false);
   const isLowerCase = email.value === email.value.toLowerCase();
-  isLowerCase ? form.submit() : showError(true);
+  return isLowerCase ? form.submit() : showError(true);
 });
