@@ -1129,3 +1129,13 @@ footer {
 label {
   visibility: hidden;
 }
+
+.error {
+  font-family: 'Poppins', serif;
+  font-size: 1.25rem;
+  padding: 1rem 0;
+  color: #ba3939;
+  background: #ffe0e0;
+  margin: 0 2rem 1rem 2rem;
+  border-radius: 0.5rem;
+}
