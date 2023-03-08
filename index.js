@@ -333,6 +333,7 @@ form.addEventListener('submit', (e) => {
   const isLowerCase = email.value === email.value.toLowerCase();
   if (isLowerCase) {
     form.submit();
+    localStorage.removeItem('formInput');
   } else {
     showError(true);
   }
@@ -342,7 +343,7 @@ form.addEventListener('submit', (e) => {
 const formInput = JSON.parse(localStorage.getItem('formInput')) || {
   fullName: '',
   email: '',
-  message: '',
+  message: 'Hello Abel, I would like to get in touch with you...',
 };
 
 const saveFormInput = (key, value) => {
