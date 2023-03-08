@@ -337,3 +337,21 @@ form.addEventListener('submit', (e) => {
     showError(true);
   }
 });
+
+//   Save to Local storage
+const formInput = JSON.parse(localStorage.getItem('formInput')) || {
+  fullName: '',
+  email: '',
+  message: '',
+};
+
+const saveFormInput = (key, value) => {
+  formInput[key] = value;
+  localStorage.setItem('formInput', JSON.stringify(formInput));
+};
+
+const fullName = document.getElementById('fullName');
+fullName.value = formInput.fullName;
+fullName.addEventListener('keyup', (e) => {
+  saveFormInput('fullName', e.target.value);
+});
