@@ -356,6 +356,7 @@ fullName.addEventListener('keyup', (e) => {
   saveFormInput('fullName', e.target.value);
 });
 
+// add email and message local storage
 const emailInput = document.getElementById('email');
 emailInput.value = formInput.email;
 emailInput.addEventListener('keyup', (e) => {
