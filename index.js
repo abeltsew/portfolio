@@ -355,3 +355,15 @@ fullName.value = formInput.fullName;
 fullName.addEventListener('keyup', (e) => {
   saveFormInput('fullName', e.target.value);
 });
+
+const emailInput = document.getElementById('email');
+emailInput.value = formInput.email;
+emailInput.addEventListener('keyup', (e) => {
+  saveFormInput('email', e.target.value);
+});
+
+const message = document.getElementById('message');
+message.value = formInput.message;
+message.addEventListener('keyup', (e) => {
+  saveFormInput('message', e.target.value);
+});
