@@ -13,75 +13,42 @@ mobileMenu.addEventListener('click', () => toggleMenu());
 const projects = [
   {
     id: 1,
-    title: 'Multi Post Stories ',
+    title: 'EthioItSupport',
     tech: ['html', 'Bootstrap', 'Ruby on rails'],
-    image: 'images/Detail_img.png',
+    image: 'images/eits-cover.png',
+    card_img: 'images/ethioitsupport-bg.png',
     description:
-      "Loremd dummy text ever since the 1500s, with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      "EthioItSupport is an on-site and remote IT support company. Also engaged in web development and hosting services.A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     shortDesc:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    liveLink: 'https://abeltsew.github.io/portfolio/',
-    sourceCode: 'https://github.com/abeltsew',
+      'A web design for a Web development company. Tailored made with bootstap to the clients need.',
+    liveLink: 'https://ethioitsupport.com/',
+    sourceCode: 'https://github.com/abeltsew/ethioitsupport',
   },
   {
     id: 2,
-    title: 'Data Dashboard Healthcare',
+    title: 'Friends conf',
     tech: ['html', 'Bootstrap', 'Ruby on rails'],
-    image: 'images/Detail_img.png',
+    image: 'images/friends-cover.png',
+    card_img: 'images/friends-bg.png',
     description:
-      "Loremd dummy text ever since the 1500s, with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      "Welcome to the Friends TV show cast reunion event! Join us for a night full of surprises, special guests, and the iconic cast members sharing their memories and behind-the-scenes stories. Let's celebrate the magic of Friends together! Taking place in Addis Ababa on April 2023.",
     shortDesc:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    liveLink: 'https://abeltsew.github.io/portfolio/',
-    sourceCode: 'https://github.com/abeltsew',
+      'Friends Reunion Conference and Ticket purchase site. This is built with Javascript for interaction.',
+    liveLink: 'https://abeltsew.github.io/friends/',
+    sourceCode: 'https://github.com/abeltsew/friends',
   },
   {
     id: 3,
-    title: 'Website Protfolio',
+    title: 'Protfolio',
     tech: ['html', 'Bootstrap', 'Ruby on rails'],
-    image: 'images/Detail_img.png',
+    image: 'images/portfolio-cover.png',
+    card_img: 'images/portfolio-bg.png',
     description:
-      "Loremd dummy text ever since the 1500s, with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      "I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.",
     shortDesc:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+      'This is showcase of my latest work and experience. You can find my various amazing projects in here.',
     liveLink: 'https://abeltsew.github.io/portfolio/',
-    sourceCode: 'https://github.com/abeltsew',
-  },
-  {
-    id: 4,
-    title: 'Profesional Art Printing Data More',
-    tech: ['html', 'Bootstrap', 'Ruby on rails'],
-    image: 'images/Detail_img.png',
-    description:
-      "Loremd dummy text ever since the 1500s, with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    shortDesc:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    liveLink: 'https://abeltsew.github.io/portfolio/',
-    sourceCode: 'https://github.com/abeltsew',
-  },
-  {
-    id: 5,
-    title: 'Data Dashboard',
-    tech: ['html', 'Bootstrap', 'Ruby on rails'],
-    image: 'images/Detail_img.png',
-    description:
-      "Loremd dummy text ever since the 1500s, with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    shortDesc:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    liveLink: 'https://abeltsew.github.io/portfolio/',
-    sourceCode: 'https://github.com/abeltsew',
-  },
-  {
-    id: 6,
-    title: 'Portfolio',
-    tech: ['html', 'Bootstrap', 'Ruby on rails'],
-    image: 'images/Detail_img.png',
-    description:
-      "Loremd dummy text ever since the 1500s, with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    shortDesc:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    liveLink: 'https://abeltsew.github.io/portfolio/',
-    sourceCode: 'https://github.com/abeltsew',
+    sourceCode: 'https://github.com/abeltsew/portfolio',
   },
 ];
 
@@ -200,12 +167,12 @@ const popUpDetail = (project) => {
 // Build Main project card
 
 const mainProject = {
-  title: 'Multi-Post Stories',
-  mainImage: 'images/projectImg.png',
-  image: 'images/Detail_img.png',
+  title: 'EthioItSupport',
+  mainImage: 'images/eits-cover.png',
+  image: 'images/eits-cover.png',
   alt: 'Main project container',
   description:
-    " A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    'Our web design company understands that driving “Revenue” is your bottom line. Our expert optimization techniques with tailored digital marketing solutions will transform simple landing pages into powerful digital selling tools.',
   tech: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
 };
 
@@ -266,7 +233,10 @@ projects.forEach((project) => {
 
   const card = document.createElement('div');
   card.classList.add('card');
-  card.style.backgroundImage = 'url(./images/card-bg.png)';
+
+  card.style.background = `linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%),url(${
+    project.card_img ? './' + project.card_img : './images/card-bg.png'
+  })`;
   card.style.backgroundPosition = 'center';
 
   const cardTitle = document.createElement('h2');
